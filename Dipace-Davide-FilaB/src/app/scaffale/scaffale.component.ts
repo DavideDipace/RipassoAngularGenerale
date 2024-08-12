@@ -6,9 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./scaffale.component.css']
 })
 export class ScaffaleComponent {
-  cassetta1 : []
+  cassette : string[]
   constructor() {
-    this.cassetta1 = 'frutta mista', 'insalate', 'frutta matura', 'ortaggi di stagione', 'verdura fresca'
+    this.cassette = ['frutta mista', 'insalate', 'frutta matura', 'ortaggi di stagione', 'verdura fresca']
   }
   ngOnInit() {
   }

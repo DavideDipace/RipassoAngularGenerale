@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./cassetta.component.css']
 })
 export class CassettaComponent {
-
+  contenuto : string[]
+  constructor() {
+    this.contenuto = ['pere', 'banane', 'fragole']
+  }
+  ngOnInit() {
+  }
 }
