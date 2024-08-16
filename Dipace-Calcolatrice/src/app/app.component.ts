@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -27,4 +27,5 @@ export class AppComponent {
   console.log(num1.valueAsNumber * num2.valueAsNumber);
   return false;
   }
+  ngOnInit() {}
 }
