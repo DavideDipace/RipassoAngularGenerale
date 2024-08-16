@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-risultato',
@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./risultato.component.css']
 })
 export class RisultatoComponent {
-    
+    @Input() risultato: any;
+
+    constructor() {
+
+    }
+    ngOnInit() {}
 }
