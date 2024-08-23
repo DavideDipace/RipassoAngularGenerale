@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Email } from './app.model';
 
 @Component({
   selector: 'app-root',
@@ -7,11 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Email-Dipace';
-  Email!: string[];
-
-  Invia(a: HTMLInputElement, oggetto: HTMLInputElement, contenuto: HTMLInputElement): boolean {
-    console.log(this.Email);
-  return false;
-
+  email : Email[];
+constructor(){
+    console.log(Email);
   }
 }

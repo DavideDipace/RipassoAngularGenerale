@@ -1,7 +1,7 @@
 <div>
-  <input type="email" name="a" id="0" #newmail> <br>
-  <input type="email" name="oggetto" id="1"> <br>
-  <input type="email" name="contenuto" id="2"> <br>
-  <button  (click) = "Invia(newmail)">Invia</button>
+  <input type="text" #newemail>
+  <input type="text" #newOggetto>
+  <input type="text" #newContenuto>
+  <button (click) = "Invia(newemail, newOggetto, newContenuto)">Invia</button>
 </div>
 
