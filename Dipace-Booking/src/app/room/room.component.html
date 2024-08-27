@@ -1,1 +1,13 @@
-<p>room works!</p>
+<input type="text" #newNome> <label>nome</label> <br>
+<input type="text" #newlettiS> <label>letti singoli</label> <br>
+<input type="text" #newLettiD> <label>letti doppi</label> <br>
+<input type="text" #newID> <label>id</label> <br>
+
+<button (click) = "funzione(newNome, newlettiS, newLettiD, newID)">Add</button>
+
+<div *ngFor = "let s of stanze; let isLast = last">
+    <p *ngIf = "isLast">{{s.name}}</p>
+    <p *ngIf = "isLast">{{s.num_S_bed}}</p>
+    <p *ngIf = "isLast">{{s.num_D_bed}}</p>
+    <p *ngIf = "isLast">{{s.id}}</p>
+</div>
